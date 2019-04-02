@@ -1,7 +1,7 @@
 # vessel-service/Dockerfile
-FROM golang:1.12.1 as builder
+FROM golang:latest as builder
 
-WORKDIR /go/src/github.com/GoMicro-Consignment/GoMicro-Vessel
+WORKDIR /go/src/github.com/binhgo/GoMicro-Vessel
 
 COPY . .
 
@@ -16,6 +16,6 @@ RUN apk --no-cache add ca-certificates
 
 RUN mkdir /app
 WORKDIR /app
-COPY --from=builder /go/src/github.com/GoMicro-Consignment/GoMicro-Vessel/GoMicro-Vessel .
+COPY --from=builder /go/src/github.com/binhgo/GoMicro-Vessel .
 
 CMD ["./GoMicro-Vessel"]

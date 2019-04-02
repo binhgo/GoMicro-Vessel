@@ -1,5 +1,5 @@
 build:
-	protoc -I. --go_out=plugins=micro:$(GOPATH)/src/github.com/GoMicro-Consignment/GoMicro-Vessel \
+	protoc -I. --go_out=plugins=micro:$(GOPATH)/src/github.com/binhgo/GoMicro-Vessel \
 	proto/vessel/vessel.proto
 	docker login --username huynhbinh -p Cicevn2007
 	docker build -t vessel-service .

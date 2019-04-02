@@ -3,7 +3,7 @@ package main
 import (
 	"errors"
 	"fmt"
-	pb "github.com/GoMicro-Consignment/GoMicro-Vessel/proto/vessel"
+	pb "github.com/binhgo/GoMicro-Vessel/proto/vessel"
 	"github.com/micro/go-micro"
 	"golang.org/x/net/context"
 )
